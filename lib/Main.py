@@ -16,7 +16,7 @@ def setPlayersAverage(avgP1=0.5, avgP2=0.5):
     CacheController.setCache("Point__prob__B", avgP2)
 
 
-def setScore(bestOf=3, tiebreakerMatch=False, setsA=0, setsB=0, gamesA=0, gamesB=0, pointsA=0, pointsB=0, server="A"):
+def setScore(bestOf=3, tiebreakerMatch=True, setsA=0, setsB=0, gamesA=0, gamesB=0, pointsA=0, pointsB=0, server="A"):
     tiebreakerSet = True
     if (bestOf == 3 and setsA == setsB and setsA == 1 and not tiebreakerMatch) or (bestOf == 5 and setsA == setsB and setsA == 2 and not tiebreakerMatch):
         tiebreakerSet = False
