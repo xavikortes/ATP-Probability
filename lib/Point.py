@@ -6,12 +6,6 @@ from lib import CacheController
 from lib import Server
 
 
-# Pasar a setCache de CacheController
-def updateCache(serveA, serveB):
-    CacheController.setCache("Point__prob__A", serveA)
-    CacheController.setCache("Point__prob__B", serveB)
-
-
 def getKey(type, server):
     return "Point__" + type + "__" + str(server)
 
